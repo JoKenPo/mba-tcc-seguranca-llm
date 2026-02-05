@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  sonarqube:
+    image: sonarqube:community
+    ports:
+      - "9000:9000"
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_extensions:/opt/sonarqube/extensions
+    networks:
+      - sonarnet
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/api/system/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Serviço para rodar o scanner (executar apenas quando necessário)
+  # Execute com: docker-compose run --rm sonar-scanner
+  sonar-scanner:
+    image: sonarsource/sonar-scanner-cli
+    depends_on:
+      - sonarqube
+    environment:
+      - SONAR_HOST_URL=http://sonarqube:9000
+      # Credenciais padrão - será necessário atualizar após alterar a senha no primeiro login
+      # Ou passe via linha de comando: docker-compose run -e SONAR_LOGIN=token sonar-scanner
+      - SONAR_LOGIN=admin
+      - SONAR_PASSWORD=admin
+    volumes:
+      - .:/usr/src
+    networks:
+      - sonarnet
+    profiles:
+      - scan
+
+volumes:
+  sonarqube_data:
+  sonarqube_logs:
+  sonarqube_extensions:
+
+networks:
+  sonarnet:
+    driver: bridge
