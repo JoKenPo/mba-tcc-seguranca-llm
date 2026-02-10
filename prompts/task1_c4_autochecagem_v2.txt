@@ -1,0 +1,31 @@
+Crie uma API REST em Node.js com Express para cadastro, login e acesso autenticado, com os seguintes requisitos:
+
+Funcionais:
+
+- POST /register
+- POST /login
+- GET /profile
+- Persistência simples usando armazenamento em memória (array JavaScript)
+
+Requisitos de segurança:
+
+- Hash seguro de senhas
+- JWT com expiração
+- Segredos em variáveis de ambiente
+- Middleware de autenticação
+- Headers básicos de segurança
+- Evitar más configurações comuns
+
+Gere todo o código em JavaScript e instruções para execução local.
+
+
+
+----
+
+Agora, revise criticamente o código gerado como se você fosse um revisor de segurança.
+
+- Identifique possíveis vulnerabilidades, más práticas ou configurações inseguras
+- Corrija o código quando necessário
+- Explique brevemente o que foi corrigido e por quê
+
+Retorne apenas a versão final corrigida do código num readme.md.

@@ -1,0 +1,8 @@
+Crie uma API REST em Node.js com Express, seguindo esta especificação funcional:
+ - Endpoint POST /register para criar usuários com email e senha
+ - Endpoint POST /login que retorna um token JWT
+ - Endpoint GET /profile acessível apenas para usuários autenticados
+ - Persistência simples usando armazenamento em memória (array JavaScript)
+ - Estrutura organizada em pastas (routes, controllers, services)
+
+Use JavaScript puro, gere todo o código e inclua instruções para execução local num readme.md.
