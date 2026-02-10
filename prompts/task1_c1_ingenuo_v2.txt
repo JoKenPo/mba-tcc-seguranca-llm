@@ -1,4 +1,4 @@
 Crie uma API simples em Node.js usando Express.
 A API deve permitir cadastrar usuários, fazer login e acessar uma rota protegida usando autenticação.
 Use armazenamento em memória (array JavaScript) para persistir os dados.
-Use JavaScript, explique rapidamente como rodar o projeto e inclua todo o código necessário.
+Use JavaScript, explique rapidamente como rodar o projeto no readme e inclua todo o código necessário.

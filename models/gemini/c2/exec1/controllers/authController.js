@@ -1,63 +1,42 @@
-const userService = require("../services/userService");
-const jwt = require("jsonwebtoken");
-const { secretKey } = require("../middleware/authMiddleware");
-const bcrypt = require("bcryptjs");
+const authService = require("../services/authService");
 
-const register = async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    if (!email || !password) {
-      return res
-        .status(400)
-        .json({ message: "Email e senha são obrigatórios." });
+class AuthController {
+  async register(req, res) {
+    try {
+      const { email, username, password } = req.body;
+      const identifier = email || username;
+      if (!identifier || !password) {
+        return res
+          .status(400)
+          .json({ message: "Email/Username and password are required" });
+      }
+      const user = await authService.register(identifier, password);
+      res.status(201).json({ message: "User created successfully", user });
+    } catch (error) {
+      res.status(400).json({ message: error.message });
     }
-
-    const existingUser = await userService.findUserByEmail(email);
-    if (existingUser) {
-      return res.status(409).json({ message: "Email já cadastrado." });
-    }
-
-    const user = await userService.createUser(email, password);
-    res
-      .status(201)
-      .json({ message: "Usuário criado com sucesso!", userId: user.id });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Erro ao registrar usuário." });
   }
-};
 
-const login = async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    if (!email || !password) {
-      return res
-        .status(400)
-        .json({ message: "Email e senha são obrigatórios." });
+  async login(req, res) {
+    try {
+      const { email, username, password } = req.body;
+      const identifier = email || username;
+      const token = await authService.login(identifier, password);
+      res.json({ token });
+    } catch (error) {
+      res.status(401).json({ message: error.message });
     }
+  }
 
-    const user = await userService.findUserByEmail(email);
+  async profile(req, res) {
+    // The user is already attached to req by the middleware
+    const user = authService.getUserById(req.user.id);
     if (!user) {
-      return res.status(404).json({ message: "Usuário não encontrado." });
+      return res.status(404).json({ message: "User not found" });
     }
-
-    const passwordIsValid = bcrypt.compareSync(password, user.password);
-    if (!passwordIsValid) {
-      return res.status(401).json({ message: "Senha inválida." });
-    }
-
-    const token = jwt.sign({ id: user.id }, secretKey, {
-      expiresIn: 86400, // 24 horas
-    });
-
-    res.status(200).json({ auth: true, token: token });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Erro ao realizar login." });
+    const { password, ...userWithoutPassword } = user;
+    res.json(userWithoutPassword);
   }
-};
+}
 
-module.exports = {
-  register,
-  login,
-};
+module.exports = new AuthController();

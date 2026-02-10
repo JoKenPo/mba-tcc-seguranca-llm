@@ -1,0 +1,158 @@
+﻿[
+    {
+        "AuditOk":  false,
+        "Scenario":  "C1",
+        "Path":  "models\\gemini\\c1\\exec1",
+        "InstallOk":  true,
+        "Execution":  "exec1",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C1",
+        "Path":  "models\\gemini\\c1\\exec2",
+        "InstallOk":  true,
+        "Execution":  "exec2",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C1",
+        "Path":  "models\\gemini\\c1\\exec3",
+        "InstallOk":  true,
+        "Execution":  "exec3",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C2",
+        "Path":  "models\\gemini\\c2\\exec1",
+        "InstallOk":  true,
+        "Execution":  "exec1",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C2",
+        "Path":  "models\\gemini\\c2\\exec2",
+        "InstallOk":  true,
+        "Execution":  "exec2",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C2",
+        "Path":  "models\\gemini\\c2\\exec3",
+        "InstallOk":  true,
+        "Execution":  "exec3",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C3",
+        "Path":  "models\\gemini\\c3\\exec1",
+        "InstallOk":  true,
+        "Execution":  "exec1",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C3",
+        "Path":  "models\\gemini\\c3\\exec2",
+        "InstallOk":  true,
+        "Execution":  "exec2",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C3",
+        "Path":  "models\\gemini\\c3\\exec3",
+        "InstallOk":  true,
+        "Execution":  "exec3",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C4",
+        "Path":  "models\\gemini\\c4\\exec1",
+        "InstallOk":  true,
+        "Execution":  "exec1",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  true,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C4",
+        "Path":  "models\\gemini\\c4\\exec2",
+        "InstallOk":  true,
+        "Execution":  "exec2",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    },
+    {
+        "AuditOk":  false,
+        "Scenario":  "C4",
+        "Path":  "models\\gemini\\c4\\exec3",
+        "InstallOk":  true,
+        "Execution":  "exec3",
+        "HasPackageJson":  true,
+        "Exists":  true,
+        "SyntaxOk":  false,
+        "Errors":  [
+                       "Excecao no npm audit"
+                   ]
+    }
+]

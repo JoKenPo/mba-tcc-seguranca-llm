@@ -1,32 +1,20 @@
-const jwt = require("jsonwebtoken");
+const authService = require("../services/authService");
 
-const secretKey = "sua_chave_secreta_super_segura"; // Em produção, use variáveis de ambiente
-
-const verifyToken = (req, res, next) => {
-  const tokenHeader = req.headers["authorization"];
-
-  if (!tokenHeader) {
-    return res.status(403).json({ message: "Nenhum token fornecido." });
+const authMiddleware = (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    return res.status(401).json({ message: "No token provided" });
   }
 
-  const token = tokenHeader.split(" ")[1]; // Bearer TOKEN
+  const token = authHeader.split(" ")[1];
+  const decoded = authService.verifyToken(token);
 
-  if (!token) {
-    return res.status(403).json({ message: "Formato de token inválido." });
+  if (!decoded) {
+    return res.status(401).json({ message: "Invalid or expired token" });
   }
 
-  jwt.verify(token, secretKey, (err, decoded) => {
-    if (err) {
-      return res.status(500).json({ message: "Falha ao autenticar o token." });
-    }
-
-    // Salva o id do usuário para uso em outras rotas
-    req.userId = decoded.id;
-    next();
-  });
+  req.user = decoded;
+  next();
 };
 
-module.exports = {
-  verifyToken,
-  secretKey,
-};
+module.exports = authMiddleware;

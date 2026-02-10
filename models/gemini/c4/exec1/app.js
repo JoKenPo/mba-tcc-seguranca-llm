@@ -1,51 +1,3 @@
-# Secure Node.js API - C4 Exec1 (Self-Correction)
-
-This is a secure Node.js REST API built with Express, featuring user registration, login, and a protected profile route.
-
-## Security Review and Improvements
-
-The initial version was reviewed and the following improvements were made:
-
-- **bcryptjs instead of bcrypt:** Switched to `bcryptjs` for password hashing to avoid native dependencies that often contain known vulnerabilities in older versions and cause cross-platform issues.
-- **Helmet:** Integrated `helmet` middleware to set various security-related HTTP headers automatically.
-- **Rate Limiting:** Added `express-rate-limit` to the login and register endpoints to mitigate brute-force and DoS attacks.
-- **Input Validation:** Added `express-validator` to ensure usernames and passwords meet basic criteria and to prevent injection.
-- **Environment Variables:** All sensitive data (JWT Secret, Port) is now managed via `.env` files.
-- **No Insecure Defaults:** Disabled `x-powered-by` header (via helmet) and ensured the memory storage is handled safely within the session.
-
----
-
-## Files
-
-### 1. package.json
-
-```json
-{
-  "name": "c4-exec1-secure-api",
-  "version": "1.0.0",
-  "description": "Secure API for TCC evaluation",
-  "main": "app.js",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.2.0",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2"
-  }
-}
-```
-
-### 2. .env.example
-
-```
-PORT=3000
-JWT_SECRET=sua_chave_secreta_super_segura_aqui
-```
-
-### 3. app.js
-
-```javascript
 require("dotenv").config();
 const express = require("express");
 const helmet = require("helmet");
@@ -148,25 +100,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-```
-
-## Instructions for Local Execution
-
-1. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-2. **Configure environment variables:**
-   - Create a `.env` file based on `.env.example`.
-   - Set a strong `JWT_SECRET`.
-
-3. **Run the server:**
-
-   ```bash
-   node app.js
-   ```
-
-4. **Testing the API:**
-   - Use the `requests.http` file with the REST Client extension or tools like Postman.

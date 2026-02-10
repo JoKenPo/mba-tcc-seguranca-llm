@@ -1,0 +1,14 @@
+{
+  "name": "c1-exec2-api",
+  "version": "1.0.0",
+  "description": "Simple Node.js API with Express for TCC security research",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3"
+  }
+}

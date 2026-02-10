@@ -1,0 +1,16 @@
+{
+  "name": "gemini-c3-exec2",
+  "version": "1.0.0",
+  "description": "Node.js API with Express - Functional Exercise",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
