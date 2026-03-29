@@ -1,0 +1,38 @@
+{
+  "cenario": "C3",
+  "execucao": 2,
+  "timestamp": "2026-03-29T21:59:50.736Z",
+  "modelo": {
+    "nome": "GPT OSS 120B",
+    "versao_api": "gpt-oss-120b-medium",
+    "provedor": "OpenAI-compatible proxy"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c3_seguranca_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 7628,
+  "tempo_geracao_segundos": 8,
+  "tokens_input": null,
+  "tokens_output": null,
+  "tokens_total": null,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-29T21:59:50.736Z"
+  },
+  "arquivos_extraidos": [
+    "api-jwt-auth/package.json",
+    "api-jwt-auth/.env.example",
+    "api-jwt-auth/src/utils/users.js",
+    "api-jwt-auth/src/middleware/auth.js",
+    "api-jwt-auth/src/routes/auth.js",
+    "api-jwt-auth/src/routes/profile.js",
+    "api-jwt-auth/src/index.js",
+    "README.md"
+  ]
+}

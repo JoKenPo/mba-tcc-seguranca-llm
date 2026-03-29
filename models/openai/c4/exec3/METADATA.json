@@ -1,0 +1,38 @@
+{
+  "cenario": "C4",
+  "execucao": 3,
+  "timestamp": "2026-03-29T22:00:40.997Z",
+  "modelo": {
+    "nome": "GPT OSS 120B",
+    "versao_api": "gpt-oss-120b-medium",
+    "provedor": "OpenAI-compatible proxy"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c4_autochecagem_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 9578,
+  "tempo_geracao_segundos": 10,
+  "tokens_input": null,
+  "tokens_output": null,
+  "tokens_total": null,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-29T22:00:40.997Z"
+  },
+  "arquivos_extraidos": [
+    ".env.example",
+    "package.json",
+    "src/index.js",
+    "src/routes/auth.js",
+    "src/routes/profile.js",
+    "src/middleware/auth.js",
+    "src/utils/validator.js",
+    "src/utils/database.js"
+  ]
+}
