@@ -1,0 +1,13 @@
+{
+  "name": "auth-api",
+  "version": "1.0.0",
+  "description": "API REST de autenticação segura com Node.js e Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

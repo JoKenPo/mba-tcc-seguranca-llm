@@ -1,0 +1,23 @@
+{
+  "name": "jwt-auth-api",
+  "version": "1.0.0",
+  "description": "REST API with JWT authentication using Node.js and Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node tests/api.test.js"
+  },
+  "keywords": ["nodejs", "express", "jwt", "rest-api", "authentication"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

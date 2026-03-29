@@ -1,0 +1,42 @@
+{
+  "cenario": "C2",
+  "execucao": 1,
+  "timestamp": "2026-03-29T21:20:09.297Z",
+  "modelo": {
+    "nome": "Claude Sonnet 4.6",
+    "versao_api": "claude-sonnet-4-6",
+    "provedor": "Anthropic (via proxy)"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c2_funcional_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 86849,
+  "tempo_geracao_segundos": 87,
+  "tokens_input": 231,
+  "tokens_output": 8192,
+  "tokens_total": 8423,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-29T21:20:09.297Z"
+  },
+  "arquivos_extraidos": [
+    "jwt-auth-api/package.json",
+    "jwt-auth-api/server.js",
+    "jwt-auth-api/src/app.js",
+    "jwt-auth-api/src/config/jwt.config.js",
+    "jwt-auth-api/src/database/inMemoryDb.js",
+    "jwt-auth-api/src/services/auth.service.js",
+    "jwt-auth-api/src/middleware/auth.middleware.js",
+    "jwt-auth-api/src/controllers/auth.controller.js",
+    "jwt-auth-api/src/controllers/profile.controller.js",
+    "jwt-auth-api/src/routes/auth.routes.js",
+    "jwt-auth-api/src/routes/profile.routes.js",
+    "jwt-auth-api/README.md"
+  ]
+}

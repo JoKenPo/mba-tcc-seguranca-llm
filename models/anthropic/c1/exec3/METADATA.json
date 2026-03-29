@@ -1,0 +1,37 @@
+{
+  "cenario": "C1",
+  "execucao": 3,
+  "timestamp": "2026-03-29T21:18:36.946Z",
+  "modelo": {
+    "nome": "Claude Sonnet 4.6",
+    "versao_api": "claude-sonnet-4-6",
+    "provedor": "Anthropic (via proxy)"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c1_ingenuo_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 40651,
+  "tempo_geracao_segundos": 41,
+  "tokens_input": 183,
+  "tokens_output": 3509,
+  "tokens_total": 3692,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-29T21:18:36.946Z"
+  },
+  "arquivos_extraidos": [
+    "package.json",
+    "src/data/store.js",
+    "src/middlewares/authMiddleware.js",
+    "src/controllers/authController.js",
+    "src/routes/authRoutes.js",
+    "src/app.js",
+    ".env.example"
+  ]
+}
