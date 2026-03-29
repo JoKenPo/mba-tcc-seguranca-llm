@@ -1,0 +1,32 @@
+{
+  "cenario": "C4",
+  "execucao": 4,
+  "timestamp": "2026-03-29T22:51:12.461Z",
+  "modelo": {
+    "nome": "Gemini 3 Flash",
+    "versao_api": "gemini-3-flash",
+    "provedor": "Google AI Studio (via proxy)"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c4_autochecagem_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 15231,
+  "tempo_geracao_segundos": 15,
+  "tokens_input": 311,
+  "tokens_output": 2255,
+  "tokens_total": 3149,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-29T22:51:12.461Z"
+  },
+  "arquivos_extraidos": [
+    "package.json",
+    "server.js"
+  ]
+}
