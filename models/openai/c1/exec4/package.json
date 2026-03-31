@@ -1,0 +1,21 @@
+{
+  "name": "user-api",
+  "version": "1.0.0",
+  "description": "API simples de cadastro, login e rota protegida usando Express e JWT (dados em memória)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["express", "jwt", "auth", "in-memory"],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

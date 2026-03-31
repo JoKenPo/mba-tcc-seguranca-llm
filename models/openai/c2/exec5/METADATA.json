@@ -1,0 +1,39 @@
+{
+  "cenario": "C2",
+  "execucao": 5,
+  "timestamp": "2026-03-31T12:08:33.980Z",
+  "modelo": {
+    "nome": "GPT OSS 120B",
+    "versao_api": "gpt-oss-120b-medium",
+    "provedor": "OpenAI-compatible proxy"
+  },
+  "parametros": {
+    "temperatura": 0.3,
+    "top_p": 0.9,
+    "max_output_tokens": 8192,
+    "seed": null
+  },
+  "prompt_usado": "task1_c2_funcional_v2.txt",
+  "contexto_inicial": "Conversa nova (sem histórico prévio)",
+  "tempo_geracao_ms": 8195,
+  "tempo_geracao_segundos": 8,
+  "tokens_input": null,
+  "tokens_output": null,
+  "tokens_total": null,
+  "ambiente": {
+    "node_version": "v22.12.0",
+    "plataforma": "win32",
+    "data_execucao": "2026-03-31T12:08:33.980Z"
+  },
+  "arquivos_extraidos": [
+    "package.json",
+    "server.js",
+    "auth.js",
+    "profile.js",
+    "authController.js",
+    "profileController.js",
+    "userService.js",
+    "authService.js",
+    "README.md"
+  ]
+}
