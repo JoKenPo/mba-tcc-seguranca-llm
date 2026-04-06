@@ -1,7 +1,6 @@
 {
   "cenario": "C2",
   "execucao": 6,
-  "timestamp": "2026-03-29T22:49:59.355Z",
   "modelo": {
     "nome": "Gemini 3 Flash",
     "versao_api": "gemini-3-flash",
@@ -20,16 +19,23 @@
   "tokens_input": 192,
   "tokens_output": 1849,
   "tokens_total": 2653,
-  "ambiente": {
-    "node_version": "v22.12.0",
-    "plataforma": "win32",
-    "data_execucao": "2026-03-29T22:49:59.355Z"
-  },
   "arquivos_extraidos": [
     "package.json",
     "src/middleware/authMiddleware.js",
     "src/controllers/authController.js",
     "src/routes/authRoutes.js",
     "src/app.js"
-  ]
+  ],
+  "timestamp_start": "2026-03-29T22:49:59.355Z",
+  "timestamp_end": "2026-03-29T22:49:59.355Z",
+  "reprodutibilidade": {
+    "pipeline_commit": "unknown",
+    "node_version": "v22.12.0",
+    "npm_version": "10.9.0",
+    "plataforma": "win32",
+    "package_lock_hash": "9d8760e607b00af879a66931068cfa65f87fcadd208b029d92e762179173f0af",
+    "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
+    "execution_order": "sequencial por cenário",
+    "retry_count": 0
+  }
 }

@@ -1,7 +1,6 @@
 {
   "cenario": "C4",
   "execucao": 5,
-  "timestamp": "2026-03-29T23:06:33.772Z",
   "modelo": {
     "nome": "Claude Sonnet 4.6",
     "versao_api": "claude-sonnet-4-6",
@@ -20,12 +19,19 @@
   "tokens_input": 344,
   "tokens_output": 6761,
   "tokens_total": 7105,
-  "ambiente": {
-    "node_version": "v22.12.0",
-    "plataforma": "win32",
-    "data_execucao": "2026-03-29T23:06:33.772Z"
-  },
   "arquivos_extraidos": [
     "index.js"
-  ]
+  ],
+  "timestamp_start": "2026-03-29T23:06:33.772Z",
+  "timestamp_end": "2026-03-29T23:06:33.772Z",
+  "reprodutibilidade": {
+    "pipeline_commit": "unknown",
+    "node_version": "v22.12.0",
+    "npm_version": "10.9.0",
+    "plataforma": "win32",
+    "package_lock_hash": null,
+    "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
+    "execution_order": "sequencial por cenário",
+    "retry_count": 0
+  }
 }

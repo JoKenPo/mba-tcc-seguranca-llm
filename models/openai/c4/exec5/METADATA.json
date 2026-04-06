@@ -1,7 +1,6 @@
 {
   "cenario": "C4",
   "execucao": 5,
-  "timestamp": "2026-03-31T12:12:44.434Z",
   "modelo": {
     "nome": "GPT OSS 120B",
     "versao_api": "gpt-oss-120b-medium",
@@ -20,11 +19,6 @@
   "tokens_input": null,
   "tokens_output": null,
   "tokens_total": null,
-  "ambiente": {
-    "node_version": "v22.12.0",
-    "plataforma": "win32",
-    "data_execucao": "2026-03-31T12:12:44.434Z"
-  },
   "arquivos_extraidos": [
     "package.json",
     ".env.example",
@@ -33,5 +27,17 @@
     "src/middleware/auth.js",
     "src/middleware/errorHandler.js",
     "src/utils/validators.js"
-  ]
+  ],
+  "timestamp_start": "2026-03-31T12:12:44.434Z",
+  "timestamp_end": "2026-03-31T12:12:44.434Z",
+  "reprodutibilidade": {
+    "pipeline_commit": "unknown",
+    "node_version": "v22.12.0",
+    "npm_version": "10.9.0",
+    "plataforma": "win32",
+    "package_lock_hash": "23814f1023d32822893133b0ffc048f72cf64251eecfe5959079f476e96d7943",
+    "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
+    "execution_order": "sequencial por cenário",
+    "retry_count": 0
+  }
 }

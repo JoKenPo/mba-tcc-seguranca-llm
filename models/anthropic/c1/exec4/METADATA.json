@@ -1,7 +1,6 @@
 {
   "cenario": "C1",
   "execucao": 4,
-  "timestamp": "2026-03-29T22:52:57.859Z",
   "modelo": {
     "nome": "Claude Sonnet 4.6",
     "versao_api": "claude-sonnet-4-6",
@@ -20,14 +19,21 @@
   "tokens_input": 183,
   "tokens_output": 3698,
   "tokens_total": 3881,
-  "ambiente": {
-    "node_version": "v22.12.0",
-    "plataforma": "win32",
-    "data_execucao": "2026-03-29T22:52:57.859Z"
-  },
   "arquivos_extraidos": [
     "package.json",
     "src/routes/authRoutes.js",
     "src/routes/userRoutes.js"
-  ]
+  ],
+  "timestamp_start": "2026-03-29T22:52:57.859Z",
+  "timestamp_end": "2026-03-29T22:52:57.859Z",
+  "reprodutibilidade": {
+    "pipeline_commit": "unknown",
+    "node_version": "v22.12.0",
+    "npm_version": "10.9.0",
+    "plataforma": "win32",
+    "package_lock_hash": "25870a930c5f9859df92676bde0ecb8b949d60a2026805ef9b74fcce2a0c52e6",
+    "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
+    "execution_order": "sequencial por cenário",
+    "retry_count": 0
+  }
 }

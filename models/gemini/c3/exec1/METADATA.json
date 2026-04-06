@@ -1,10 +1,12 @@
 {
   "cenario": "C3",
-  "execucao": 4,
+  "execucao": 1,
+  "timestamp_start": "2026-03-29T00:00:00.000Z",
+  "timestamp_end": "2026-03-29T00:00:00.000Z",
   "modelo": {
-    "nome": "GPT OSS 120B",
-    "versao_api": "gpt-oss-120b-medium",
-    "provedor": "OpenAI-compatible proxy"
+    "nome": "Gemini 3 Flash",
+    "versao_api": "gemini-3-flash",
+    "provedor": "Google AI Studio (via proxy)"
   },
   "parametros": {
     "temperatura": 0.3,
@@ -14,28 +16,26 @@
   },
   "prompt_usado": "task1_c3_seguranca_v2.txt",
   "contexto_inicial": "Conversa nova (sem histórico prévio)",
-  "tempo_geracao_ms": 37238,
-  "tempo_geracao_segundos": 37,
+  "tempo_geracao_ms": null,
+  "tempo_geracao_segundos": null,
   "tokens_input": null,
   "tokens_output": null,
   "tokens_total": null,
-  "arquivos_extraidos": [
-    "package.json",
-    ".env.example",
-    "src/index.js",
-    "src/middleware/auth.js",
-    "src/routes/auth.js"
-  ],
-  "timestamp_start": "2026-03-31T12:09:54.453Z",
-  "timestamp_end": "2026-03-31T12:09:54.453Z",
   "reprodutibilidade": {
     "pipeline_commit": "unknown",
     "node_version": "v22.12.0",
     "npm_version": "10.9.0",
     "plataforma": "win32",
-    "package_lock_hash": "2828c696db4cccd21ec8337faa8aa5e11d95010a06e0d5c2b3253c32cf766e3e",
+    "package_lock_hash": "6b99a526be2c70bcf3f25d4882c9c69e8cd89d2c5effc2ae3e93cad72dc30f3f",
     "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
     "execution_order": "sequencial por cenário",
     "retry_count": 0
-  }
+  },
+  "arquivos_extraidos": [
+    ".env",
+    "package.json",
+    "README.md",
+    "requests.http"
+  ],
+  "_nota": "METADATA reconstruído retroativamente. Timestamps e tokens são aproximados."
 }

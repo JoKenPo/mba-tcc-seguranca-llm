@@ -1,7 +1,6 @@
 {
   "cenario": "C3",
   "execucao": 6,
-  "timestamp": "2026-03-29T22:50:51.660Z",
   "modelo": {
     "nome": "Gemini 3 Flash",
     "versao_api": "gemini-3-flash",
@@ -20,12 +19,19 @@
   "tokens_input": 250,
   "tokens_output": 1917,
   "tokens_total": 2615,
-  "ambiente": {
-    "node_version": "v22.12.0",
-    "plataforma": "win32",
-    "data_execucao": "2026-03-29T22:50:51.660Z"
-  },
   "arquivos_extraidos": [
     "package.json"
-  ]
+  ],
+  "timestamp_start": "2026-03-29T22:50:51.660Z",
+  "timestamp_end": "2026-03-29T22:50:51.660Z",
+  "reprodutibilidade": {
+    "pipeline_commit": "unknown",
+    "node_version": "v22.12.0",
+    "npm_version": "10.9.0",
+    "plataforma": "win32",
+    "package_lock_hash": "d70c11ef8705f2f2b25986f1dac46049f52e478fb3649340905ad354652ae993",
+    "environment_cleanup": "diretório criado limpo (fs.mkdirSync recursive)",
+    "execution_order": "sequencial por cenário",
+    "retry_count": 0
+  }
 }
